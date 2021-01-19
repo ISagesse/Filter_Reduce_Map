@@ -1,3 +1,5 @@
+import emojipedia from "./emojipedia";
+
 var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
@@ -42,10 +44,18 @@ var numbers = [3, 56, 2, 48, 5];
 
 //FindIndex - find the index of the first item that matches.
 
-function finding(num) {
-  return num > 10;
+// function finding(num) {
+//   return num > 10;
+// }
+
+// let newNumber = numbers.findIndex(finding);
+
+// console.log(newNumber);
+
+function meaning(mean) {
+  return mean.meaning.substring(0, 100);
 }
 
-let newNumber = numbers.findIndex(finding);
+let newMeaning = emojipedia.map(meaning);
 
-console.log(newNumber);
+console.log(newMeaning);
